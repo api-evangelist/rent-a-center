@@ -1,0 +1,7 @@
+aid: rent-a-center
+url: https://raw.githubusercontent.com/api-evangelist/rent-a-center/refs/heads/main/apis.yml
+modified: '2026-03-24'
+apis: []
+common:
+  - type: Website
+    url: https://www.rent-a-center.com
