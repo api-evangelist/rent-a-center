@@ -1,7 +1,11 @@
 aid: rent-a-center
-url: https://raw.githubusercontent.com/api-evangelist/rent-a-center/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/rent-a-center/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.rent-a-center.com
+description: >-
+  Rent-A-Center is a lease-to-own provider of furniture, electronics, appliances,
+  and computers, with stores throughout the United States, Mexico, and Puerto Rico.
