@@ -1,0 +1,136 @@
+vocabulary:
+  name: Rent-A-Center Vocabulary
+  description: >-
+    Vocabulary and taxonomy for Rent-A-Center lease-to-own retail operations,
+    covering lease agreements, payment schedules, merchandise categories,
+    and the company's partner integration programs.
+  version: "1.0"
+  created: "2026-05-02"
+  modified: "2026-05-02"
+  tags:
+    - Retail
+    - Lease-To-Own
+    - Consumer Finance
+
+terms:
+
+  # Business Model
+  - term: Lease-To-Own
+    definition: >-
+      A consumer transaction model where merchandise is rented on a periodic
+      payment basis with the option to own the item after making all required
+      payments, or purchase early at a reduced cash price. No credit check
+      is required for standard agreements.
+    category: Business Model
+    tags: [Finance, Retail]
+
+  - term: Lease Agreement
+    definition: >-
+      A contractual arrangement between Rent-A-Center and a customer specifying
+      the merchandise, payment schedule, payment amount, cash price, and total
+      cost of ownership for a specific rental period.
+    category: Agreement
+    tags: [Legal, Finance]
+
+  - term: Cash Price
+    definition: >-
+      The immediate purchase price to own merchandise outright without a lease
+      agreement. Typically significantly lower than the total cost of ownership
+      via periodic payments.
+    category: Pricing
+    tags: [Finance, Pricing]
+
+  - term: Total Cost of Ownership
+    definition: >-
+      The total amount a customer pays if they complete all scheduled lease
+      payments without early buyout. Includes the cash price plus financing fees.
+    category: Pricing
+    tags: [Finance, Pricing]
+
+  - term: Early Purchase Option
+    definition: >-
+      The ability for a customer to buy out their lease agreement before the
+      end of the term at a discounted price, typically calculated as a
+      percentage of the original cash price.
+    category: Agreement
+    tags: [Finance, Customer]
+
+  # Payment
+  - term: AutoPay
+    definition: >-
+      Automatic recurring payment enrollment via the Rent-A-Center ePay portal.
+      Customers can enroll a bank account or card to automatically process
+      payments on the due date.
+    category: Payment
+    tags: [Payment, Digital]
+
+  - term: ePay
+    definition: >-
+      Rent-A-Center's online and mobile payment platform at epay.rentacenter.com.
+      Allows customers to view agreements, make payments, and enroll in AutoPay.
+    category: Payment
+    tags: [Payment, Digital]
+
+  # Programs
+  - term: Acima
+    definition: >-
+      Formerly AcceptanceNOW. A Rent-A-Center brand providing a virtual
+      lease-to-own kiosk program for partner retailers. Customers can apply
+      for lease approval at participating retail partner locations.
+    category: Program
+    tags: [Partner, Integration]
+
+  - term: Preferred Lease
+    definition: >-
+      Rent-A-Center's combined in-store and virtual lease-to-own service for
+      retail partners, combining Acima's in-store kiosks with Merchants Preferred's
+      virtual lease capabilities.
+    category: Program
+    tags: [Partner, Integration]
+
+  # Merchandise
+  - term: Electronics
+    definition: >-
+      Consumer electronics merchandise available for lease including televisions,
+      gaming consoles, sound systems, and mobile phones. One of Rent-A-Center's
+      primary product categories.
+    category: Merchandise
+    tags: [Products, Electronics]
+
+  - term: Appliances
+    definition: >-
+      Home appliances available for lease including washers, dryers, refrigerators,
+      and air conditioners. Major appliances make up a significant portion of
+      Rent-A-Center's merchandise.
+    category: Merchandise
+    tags: [Products, Appliances]
+
+  - term: Furniture
+    definition: >-
+      Home and bedroom furniture including sofas, beds, dining sets, and
+      mattresses available through Rent-A-Center lease agreements.
+    category: Merchandise
+    tags: [Products, Furniture]
+
+  - term: Certified Pre-Owned
+    definition: >-
+      Returned, refurbished merchandise that Rent-A-Center inspects and
+      recertifies for re-rental at reduced payment amounts. Available
+      alongside new merchandise in most stores.
+    category: Merchandise
+    tags: [Products, Condition]
+
+  # Payment Schedules
+  - term: Weekly Payment
+    definition: >-
+      The most common lease payment schedule at Rent-A-Center, where
+      customers make payments every week aligned to their pay cycle.
+    category: Payment Schedule
+    tags: [Payment, Schedule]
+
+  - term: Bi-Weekly Payment
+    definition: >-
+      A lease payment schedule where payments are made every two weeks,
+      typically aligned with a bi-weekly paycheck.
+    category: Payment Schedule
+    tags: [Payment, Schedule]

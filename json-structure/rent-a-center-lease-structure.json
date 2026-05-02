@@ -1,0 +1,80 @@
+{
+  "title": "Rent-A-Center Lease Agreement Structure",
+  "description": "Structural documentation for a Rent-A-Center lease-to-own agreement",
+  "type": "object",
+  "structure": {
+    "agreementId": {
+      "type": "string",
+      "description": "Unique lease agreement identifier",
+      "example": "RAC-12345678"
+    },
+    "customerId": {
+      "type": "string",
+      "description": "Customer account number",
+      "example": "CUST-9876543"
+    },
+    "storeId": {
+      "type": "string",
+      "description": "Store location number",
+      "example": "STORE-00123"
+    },
+    "status": {
+      "type": "string",
+      "description": "Agreement status: Active, Inactive, Paid Out, Returned, etc.",
+      "example": "Active"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "ISO 8601 start date of the lease",
+      "example": "2025-01-15"
+    },
+    "paymentSchedule": {
+      "type": "string",
+      "description": "Frequency of payments: Weekly, Bi-Weekly, Monthly",
+      "example": "Weekly"
+    },
+    "paymentAmount": {
+      "type": "number",
+      "description": "Regular payment amount in USD",
+      "example": 29.99
+    },
+    "cashPrice": {
+      "type": "number",
+      "description": "One-time cash price to purchase immediately",
+      "example": 599.99
+    },
+    "totalCostOfOwnership": {
+      "type": "number",
+      "description": "Total cost if all lease payments are made to own the item",
+      "example": 1439.48
+    },
+    "remainingPayments": {
+      "type": "integer",
+      "description": "Number of payments remaining",
+      "example": 36
+    },
+    "nextPaymentDate": {
+      "type": "string",
+      "description": "Next payment due date in ISO 8601",
+      "example": "2025-05-09"
+    },
+    "autoPayEnabled": {
+      "type": "boolean",
+      "description": "Whether ePay auto-payment is enabled",
+      "example": true
+    },
+    "items": {
+      "type": "array",
+      "description": "List of leased merchandise items",
+      "items": {
+        "properties": {
+          "itemId": { "type": "string" },
+          "description": { "type": "string", "example": "65-inch 4K Smart TV" },
+          "category": { "type": "string", "example": "Electronics" },
+          "brand": { "type": "string", "example": "Samsung" },
+          "condition": { "type": "string", "example": "New" }
+        }
+      }
+    }
+  }
+}

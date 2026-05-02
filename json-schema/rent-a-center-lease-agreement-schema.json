@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rentacenter.com/schemas/lease-agreement",
+  "title": "Rent-A-Center Lease Agreement",
+  "description": "A lease-to-own agreement between Rent-A-Center and a customer for merchandise rental",
+  "type": "object",
+  "required": ["agreementId", "customerId", "status", "items"],
+  "properties": {
+    "agreementId": {
+      "type": "string",
+      "description": "Unique identifier for the lease agreement"
+    },
+    "customerId": {
+      "type": "string",
+      "description": "Customer account identifier"
+    },
+    "storeId": {
+      "type": "string",
+      "description": "Rent-A-Center store location identifier"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current agreement status",
+      "enum": ["Active", "Inactive", "Paid Out", "Returned", "Stolen", "Charged Off"]
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the lease agreement began"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the lease agreement ends or was closed"
+    },
+    "paymentSchedule": {
+      "type": "string",
+      "description": "Payment frequency",
+      "enum": ["Weekly", "Bi-Weekly", "Monthly", "Semi-Monthly"]
+    },
+    "paymentAmount": {
+      "type": "number",
+      "description": "Regular payment amount in USD"
+    },
+    "cashPrice": {
+      "type": "number",
+      "description": "One-time cash purchase price of the items"
+    },
+    "totalCostOfOwnership": {
+      "type": "number",
+      "description": "Total cost to own items if all payments are made"
+    },
+    "remainingPayments": {
+      "type": "integer",
+      "description": "Number of payments remaining to own the merchandise"
+    },
+    "nextPaymentDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the next scheduled payment"
+    },
+    "autoPayEnabled": {
+      "type": "boolean",
+      "description": "Whether automatic payment is enrolled"
+    },
+    "items": {
+      "type": "array",
+      "description": "Merchandise items included in the agreement",
+      "items": {
+        "type": "object",
+        "properties": {
+          "itemId": { "type": "string" },
+          "description": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["Furniture", "Electronics", "Appliances", "Computers", "Smartphones"]
+          },
+          "brand": { "type": "string" },
+          "model": { "type": "string" },
+          "condition": {
+            "type": "string",
+            "enum": ["New", "Certified Pre-Owned"]
+          }
+        }
+      }
+    },
+    "customer": {
+      "type": "object",
+      "description": "Customer information",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": { "type": "string" },
+            "city": { "type": "string" },
+            "state": { "type": "string" },
+            "zipCode": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
