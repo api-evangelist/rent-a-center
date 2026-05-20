@@ -25,6 +25,10 @@ tags:
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/rentacenter
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/rent-a-center
   - type: Website
     url: https://www.rentacenter.com
     name: Rent-A-Center
