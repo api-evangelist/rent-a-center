@@ -3,13 +3,10 @@
   "feeds": [
     {
       "source": "https://www.rentacenter.com/en/blog",
-      "error": "HTTPError"
-    },
-    {
-      "source": "https://www.upbound.com",
-      "error": "HTTPError"
+      "saved": 0,
+      "error": "403 Forbidden on every fetch attempt"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:06:16Z"
 }
