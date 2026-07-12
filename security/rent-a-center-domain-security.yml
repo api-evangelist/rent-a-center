@@ -1,0 +1,35 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.rentacenter.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  4 03:46:13 2026 GMT
+  hsts: null
+- host: www.acima.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  6 15:54:48 2026 GMT
+  hsts: null
+- host: epay.rentacenter.com
+  https: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch,
+    certificate is not valid for ''epay.rentac'
+  hsts: null
+domains:
+- domain: rentacenter.com
+  dnssec: false
+  caa:
+  - ;; connection timed out; no servers could be reached
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: acima.com
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
