@@ -29,6 +29,13 @@ type: Index
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rent-a-center.png
 tags:
   - Retail
+  - Lease-to-Own
+  - Consumer Finance
+  - Electronics
+  - Furniture
+  - Fortune 1000
+tags_raw:
+  - Retail
   - Lease-To-Own
   - Consumer Finance
   - Electronics
