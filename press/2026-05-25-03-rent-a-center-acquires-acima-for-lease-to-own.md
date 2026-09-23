@@ -1,7 +1,9 @@
 ---
 title: Rent-A-Center Acquires Acima For Lease-To-Own
 url: https://www.pymnts.com/news/partnerships-acquisitions/2020/rent-a-center-acquires-acima-for-virtual-lease-to-own-platform/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Rent-A-Center" press release artificial intelligence'
 position: 3
 source: serpapi-google
